@@ -105,11 +105,11 @@ basic.forever(function () {
     checkParameters()
     if (RLTl == 0 || RLTr == 0) {
         moverDerechaCerradaTrasera()
-        basic.pause(250)
+        basic.pause(500)
         moverAdelante()
     } else if (RRTl == 0 || RRTr == 0) {
         moverIzquierdaCerradaTrasera()
-        basic.pause(250)
+        basic.pause(500)
         moverAdelante()
     } else if (RCTl == 0 || RCTr == 0) {
         moverAtras()
