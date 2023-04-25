@@ -104,16 +104,18 @@ basic.forever(function () {
     RCTr = maqueen.readPatrol(maqueen.Patrol.PatrolRight)
     checkParameters()
     if (RLTl == 0 || RLTr == 0) {
-        moverDerechaCerradaTrasera()
-        basic.pause(500)
-        moverAdelante()
-    } else if (RRTl == 0 || RRTr == 0) {
         moverIzquierdaCerradaTrasera()
-        basic.pause(500)
+        basic.pause(1500)
         moverAdelante()
+        basic.pause(500)
+    } else if (RRTl == 0 || RRTr == 0) {
+        moverDerechaCerradaTrasera()
+        basic.pause(1500)
+        moverAdelante()
+        basic.pause(500)
     } else if (RCTl == 0 || RCTr == 0) {
         moverAtras()
-        basic.pause(500)
+        basic.pause(1000)
         moverDerecha()
     } else {
         if (RCD < 100 && (RLD < 100 && RRD < 100)) {
