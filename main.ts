@@ -128,5 +128,4 @@ basic.forever(function () {
             moverAdelante()
         }
     }
-    basic.pause(100)
 })
